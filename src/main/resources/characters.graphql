@@ -1,0 +1,17 @@
+schema {
+    query: Query
+}
+
+type Query {
+    allCharacters: [CharacterEntity]
+    character(id: String): CharacterEntity
+}
+
+type CharacterEntity {
+    id: String
+    firstName: String
+    lastName: String
+    voicedBy: String
+    role: String
+    firstAppearance: String
+}
