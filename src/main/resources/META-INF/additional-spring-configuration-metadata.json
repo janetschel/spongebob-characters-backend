@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "mongodb.uri",
+      "type": "java.lang.String",
+      "description": "Provides an URI for a database read connection."
+    }
+  ]
+}
