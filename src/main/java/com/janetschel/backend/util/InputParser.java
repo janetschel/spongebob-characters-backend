@@ -10,7 +10,7 @@ public class InputParser {
          * Since only queries in form { allCharacters { ... } ... } are allowed these following steps are done to format the query:
          *      - remove first 10 chars (they are always the same): {"query":" gets removed
          *      - remove all \n (replacing \n with nothing)
-         *      - remove all \ anywhere als in the query (happens when query searches for an id and passes it with quotation marks)
+         *      - remove all \ anywhere else in the query (happens when query searches for an id and passes it with quotation marks)
          *      - remove last 2 chars (they are always "} since the query ends this way): "}' gets removed
          * Now that the query is in the correct format it can be returned and used by the GraphQL API
          */
