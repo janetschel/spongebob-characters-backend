@@ -11,7 +11,7 @@ public class InputParser {
          *      - remove first 10 chars (they are always the same): {"query":" gets removed
          *      - remove all \n (replacing \n with nothing)
          *      - remove all \ anywhere else in the query (happens when query searches for an id and passes it with quotation marks)
-         *      - remove last 2 chars (they are always "} since the query ends this way): "}' gets removed
+         *      - remove last 2 chars (they are always "} since the query ends this way): "} gets removed
          * Now that the query is in the correct format it can be returned and used by the GraphQL API
          */
 
